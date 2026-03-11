@@ -8,7 +8,7 @@ terraform {
 }
 
 # create s3 bucket
- backend "s3" {
+backend "s3" {
     bucket = "terraform-state-file-hymas3" #your s3 vault name
     key    = "roboshop-infra-dev/infra/00-vpc/terraform.tfstate" #path to the state file in the vault
     region = "us-east-1"
