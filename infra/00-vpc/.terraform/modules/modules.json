@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"vpc","Source":"git::https://github.com/hyma999/roboshop-infra-dev.git?ref=main","Dir":".terraform/modules/vpc"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."}]}
