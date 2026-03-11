@@ -10,7 +10,7 @@ terraform {
 # create s3 bucket
 terraform {
   backend "s3" {
-    bucket = "terraform-hymaaws"
+    bucket = "terraform-hymaaws-s3"
     key    = "roboshop/vpc/terraform.tfstate"
     region = "us-east-1"
   }
