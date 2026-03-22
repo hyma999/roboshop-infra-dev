@@ -2,7 +2,7 @@ module "vpc" {
   source = "git::https://github.com/hyma999/roboshop-infra-dev.git?ref=main"
 }
 
- variable "project" {
+variable "project" {
   type = string
 }
 
