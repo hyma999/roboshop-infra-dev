@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "https://github.com/daws-88s/roboshop-infra-dev.git"
+  source = "https://github.com/hyma999/roboshop-infra-dev.git"
 
   project              = var.project
   environment          = var.environment
