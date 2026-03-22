@@ -1,16 +1,8 @@
 module "vpc" {
   source = "git::https://github.com/hyma999/terraform-aws-vpc.git?ref=main"
+  project = var.project
+  environment = var.environment
+  is_peering_required = true
 }
 
-# variable "project" {
-#   type = string
-# }
 
-# variable "environment" {
-#   type = string
-# }
-
-variable "is_peering_required" {
-  type    = bool
-  default = true
-}
