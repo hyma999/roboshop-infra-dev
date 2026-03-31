@@ -9,7 +9,7 @@
 
   backend "s3" {
     bucket  = "hymaaws" # Replace with your unique bucket name
-    key     = "roboshop-dev-bastion"
+    key     = "roboshop-dev-db"
     region  = "us-east-1"
     encrypt = true
     use_lockfile   = true
