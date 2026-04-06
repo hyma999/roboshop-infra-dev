@@ -8,7 +8,7 @@
   }
 
   backend "s3" {
-    bucket  = "terraform-statefile-hymaawa" # Replace with your unique bucket name
+    bucket  = "terraform-statefile-hymaaws" # Replace with your unique bucket name
     key     = "roboshop-dev-catalogue"
     region  = "us-east-1"
     encrypt = true
