@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket  = "hymaaws" # Replace with your unique bucket name
-    key     = "roboshop-dev-components"
+    key     = "roboshop-dev-cdn"
     region  = "us-east-1"
     encrypt = true
     use_lockfile   = true
