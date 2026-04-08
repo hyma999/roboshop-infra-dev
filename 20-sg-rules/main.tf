@@ -105,7 +105,8 @@ resource "aws_security_group_rule" "frontend_alb_public" {
   cidr_blocks = ["0.0.0.0/0"]
   security_group_id = local.frontend_alb_sg_id
 }
-# Open VPN
+
+#OPENVPN
 resource "aws_security_group_rule" "openvpn_public_443" {
   type              = "ingress"
   from_port         = 443
@@ -115,8 +116,7 @@ resource "aws_security_group_rule" "openvpn_public_443" {
   cidr_blocks = ["0.0.0.0/0"]
   security_group_id = local.openvpn_sg_id
 }
-
-# Admin UI
+#adminui openvpn
 resource "aws_security_group_rule" "openvpn_public_943" {
   type              = "ingress"
   from_port         = 943
@@ -126,7 +126,6 @@ resource "aws_security_group_rule" "openvpn_public_943" {
   cidr_blocks = ["0.0.0.0/0"]
   security_group_id = local.openvpn_sg_id
 }
-
 resource "aws_security_group_rule" "backend_alb_openvpn" {
   type              = "ingress"
   from_port         = 80
@@ -136,6 +135,5 @@ resource "aws_security_group_rule" "backend_alb_openvpn" {
   source_security_group_id = local.openvpn_sg_id
   security_group_id = local.backend_alb_sg_id
 }
-
 
 
